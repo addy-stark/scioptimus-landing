@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Interest | SciOptimus</title>
+    <meta
+      name="description"
+      content="Book a SciOptimus demo and share your lab's inventory, compliance, and workflow goals."
+    />
+    <meta property="og:title" content="Register Interest | SciOptimus" />
+    <meta
+      property="og:description"
+      content="Schedule a tailored demo for your lab, institution, or investment team."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Register Interest | SciOptimus" />
+    <meta name="twitter:image" content="logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="logo.jpeg" alt="SciOptimus logo" />
+          <span>SciOptimus</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#process">Process</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#regulatory">Regulatory</a>
+          <a href="index.html#investors">Investor Relations</a>
+          <a href="news.html">News</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-lite reveal">
+        <img src="image5.jpeg" alt="Demo registration visual" />
+        <div class="overlay"></div>
+        <div class="content">
+          <span class="eyebrow">Book a Demo</span>
+          <h1>Register Your Interest in SciOptimus</h1>
+          <p>
+            For labs, institutions, investors, and academic teams. Submit details and your email app will open with a
+            pre-filled message to admin@scioptimus.com.
+          </p>
+        </div>
+      </section>
+
+      <section class="section grid-2 reveal">
+        <article class="card">
+          <h2>Tell Us About Your Lab</h2>
+          <form id="interest-form">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required placeholder="Dr. Priya Sharma" />
+
+            <label for="email">Work Email</label>
+            <input id="email" name="email" type="email" required placeholder="name@organization.edu" />
+
+            <label for="organization">Organization</label>
+            <input id="organization" name="organization" required placeholder="University / Pharma / Company" />
+
+            <label for="role">Role</label>
+            <input id="role" name="role" required placeholder="PI, Lab Manager, Procurement Lead, Investor" />
+
+            <label for="interest_type">Type of Interest</label>
+            <select id="interest_type" name="interest_type" required>
+              <option value="">Select one</option>
+              <option>Lab Demo Request</option>
+              <option>Institution Deployment</option>
+              <option>Investor Conversation</option>
+              <option>Academic Collaboration</option>
+              <option>Regulatory Product Inquiry</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us your current challenges and goals."></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit Demo Request</button>
+            <p id="form-status" aria-live="polite"></p>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>What Happens Next</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h3>Instant Routing</h3>
+                <p>Your request is drafted directly to admin@scioptimus.com through your email client.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h3>Needs Review</h3>
+                <p>The SciOptimus team reviews your lab model, size, and compliance needs.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h3>Tailored Demo</h3>
+                <p>Receive a guided walkthrough aligned to your workflows and data trust requirements.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>© 2026 SciOptimus.</span>
+        <span class="footer-links"><a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a> <a href="mailto:admin@scioptimus.com">Contact</a></span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
